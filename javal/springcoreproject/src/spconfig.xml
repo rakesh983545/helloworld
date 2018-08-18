@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN //EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<bean id="id1" class="springcoreproject.SampleBean">
+<property name="db">
+<ref bean="id3"/>
+</property>
+</bean>
+
+<bean id="id2" class="springcoreproject.ExampleBean">
+<property name="db">
+<ref bean="id3"/>
+</property>
+</bean>
+
+<bean id="id3" class="springcoreproject.DemoBean"/>
+</beans>
